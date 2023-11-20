@@ -1,0 +1,22 @@
+/* SplitScreenLayout.css */
+.split-screen-container {
+    display: flex;
+    height: 100vh; /* Set the height to the full viewport height */
+  }
+  
+  .left-panel {
+    flex: 1; /* Make both panels grow and take equal space */
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .right-panel {
+    flex: 1; /* Make both panels grow and take equal space */
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .right-panel {
+    background-color: #f4f4f4;
+  }
+  

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-
+import SplitScreenLayout from "./components/Home/SplitScreenLayout";
 
 import {
   BrowserRouter as Router,
@@ -27,18 +27,14 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Preloader load={load} />
+    <>
+  <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-      
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
-      
+      <SplitScreenLayout />
       </div>
-    </Router>
+
+
+</>
   );
 }
 
